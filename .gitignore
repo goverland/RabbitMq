@@ -10,6 +10,12 @@
 *.userosscache
 *.sln.docstates
 
+appsettings*.json
+*.json
+# Certificate files.
+*.pem
+*.p12
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -361,3 +367,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/RabbitApi/appsettings.json
+/RabbitApi/appsettings.Development.json
+/RabbitMqSender/appsettings.json
