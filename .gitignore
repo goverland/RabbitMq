@@ -11,7 +11,7 @@
 *.sln.docstates
 
 appsettings*.json
-*.json
+
 # Certificate files.
 *.pem
 *.p12

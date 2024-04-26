@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqConsumer", "RabbitMqSender\RabbitMqConsumer.csproj", "{913B5584-B2FA-43A4-8B64-A643513144C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqConsumer", "RabbitMqSender\RabbitMqConsumer.csproj", "{913B5584-B2FA-43A4-8B64-A643513144C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitApi", "RabbitApi\RabbitApi.csproj", "{6A41AF82-3BB6-4F23-AD7A-0203AD524B26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitApi", "RabbitApi\RabbitApi.csproj", "{6A41AF82-3BB6-4F23-AD7A-0203AD524B26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B9E55A98-9F9D-4682-8320-D861A7EDB205}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

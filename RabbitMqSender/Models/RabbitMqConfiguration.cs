@@ -8,7 +8,10 @@ namespace RabbitMqConsumer.Models;
 
 public class RabbitMqConfiguration
 {
-    public string HostName { get; set; } = "localhost";
-    public string UserName { get; set; } = "guest";
-    public string Password { get; set; } = "guest";
+    public string HostName { get; set; } 
+    public string UserName { get; set; } 
+    public string Password { get; set; }
+    public string CertPassword { get; set; }
+    public string ServerName { get; set; }
+    public string CertPath { get; set; }
 }

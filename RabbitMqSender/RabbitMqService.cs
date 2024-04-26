@@ -19,16 +19,28 @@ public class RabbitMqService : IRabbitMqService
 
     public IConnection CreateConnection()
     {
-        var factory = new ConnectionFactory
+        var factory = new ConnectionFactory()
         {
             HostName = _configuration.HostName,
             UserName = _configuration.UserName,
-            Password = _configuration.Password
+            Password = _configuration.Password,
+
+            Port = 5671,
+
+            Ssl = new SslOption
+            {
+                CertPath = _configuration.CertPath,
+                CertPassphrase = _configuration.CertPassword,
+                Enabled = true,
+                ServerName = _configuration.ServerName
+            }
         };
 
-        factory.Uri = new Uri($"amqp://{_configuration.UserName}:{_configuration.Password}@{_configuration.HostName}");
         factory.ClientProvidedName = "RabbitMqSender";
+
         var channel = factory.CreateConnection();
         return channel;
     }
 }
+
+
